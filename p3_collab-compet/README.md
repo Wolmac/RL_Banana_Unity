@@ -64,4 +64,4 @@ Then, place the file in the `p3_collab-compet/` folder in the DRLND GitHub repos
 
 The project description above is from Udacity. 
 
-You can run my implementation simply in terminal by : ' python main.py' to train two ddpg agents, one for each tennis player.
+You can run my implementation simply in terminal by : ' python main.py' to train two ddpg agents, one for each tennis player. The environment is considered solved when the average reward over 100 episodes is at least 0.5 (each time the maximum of both agents). The environment was solved in episode 1284 (see Report).
