@@ -5,7 +5,7 @@ This GitHub repository provides an implementation of an agent applied to the ten
 ![Reward Plot](Av_rewards.png)
 The rewards of each episode are saved in rewards.pkl If you read the reward file 'reward_file = pickle.load(open('rewards.pkl','rb')).
 
-Here a plot of the cumulative future reward over 100 episodes (average over both agents):
+Here a plot of the cumulative future reward over 100 episodes:
 
 ![Reward Plot](Cum_reward100Ep.png)
 
@@ -18,7 +18,7 @@ DDPG<br>
 See:<br>
 [Dropwizard](https://arxiv.org/abs/1509.02971)
 <br>
-The agent is trained via deep deterministic policy gradients, a combination of deep q learning and policy based reinforcement learning. A DNN is optimized to estimate the correct action value function of the environment and another DNN determines the continuous actions. After 104 episodes the average reward over all agents and 100 episodes was above 30.
+The agent is trained via deep deterministic policy gradients, a combination of deep q learning and policy based reinforcement learning. A DNN is optimized to estimate the correct action value function of the environment and another DNN determines the continuous actions. 
 There are two ddpg networks, one for each agent. They are both trained. No shared replay buffer. 
 ### Hyperparameter:
 - DNN:
